@@ -2,7 +2,7 @@ import React from 'react'
 
 const EstatisticasClima = ({children}) => {
   return (
-    <p className="text-base text-white">{children}</p>
+    <p className="text-sm text-white md:text-base">{children}</p>
   )
 }
 

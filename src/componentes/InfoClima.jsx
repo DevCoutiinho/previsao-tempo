@@ -11,7 +11,7 @@ const InfoClima = ({ dadosClima }) => {
   return (
     <div className="w-full flex justify-center pt-[60px]">
       {dadosClima && dadosClima !== "" && (
-        <div className="w-[620px] h-[250px]  shadow-xl bg-[rgba(255,255,255,0.05)] rounded-lg p-[18px] md:h-[290px]">
+        <div className="w-[620px] h-[250px]  shadow-xl bg-[rgba(255,255,255,0.05)] rounded-lg p-[15px] md:h-[290px] md:p[18px]">
           <h4 className="text-white font-semibold text-md">
             {dadosClima.name}
           </h4>
@@ -33,8 +33,8 @@ const InfoClima = ({ dadosClima }) => {
                 {formatLetter(dadosClima.weather[0].description)}
               </span>
               <p className="text-sm text-white font-semibold">
-                Sensação térmica{" "}
-                <span>{`${dadosClima.main.feels_like.toFixed()}°`}</span>
+                Sensação térmica
+                <span className=" ml-1">{`${dadosClima.main.feels_like.toFixed()}°`}</span>
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ const InfoClima = ({ dadosClima }) => {
               de {`${dadosClima.main.temp_min.toFixed()}°`}
             </p>
           </div>
-          <div className="flex mt-[15px] gap-[35px] ml-[10px] md:mt-6 md:gap-[60px] md:ml-4">
+          <div className="flex mt-[15px] gap-[22px] ml-[12px] md:mt-6 md:gap-[60px] md:ml-4">
             <div>
               <Span>Vento</Span>
               <EstatisticasClima>{`${(
