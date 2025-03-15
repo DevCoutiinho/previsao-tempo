@@ -15,7 +15,7 @@ const InfoClima = ({ dadosClima }) => {
           <h4 className="text-white font-semibold text-md">
             {dadosClima.name}
           </h4>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
             <span>
               <img
                 className="w-[90px]"
@@ -27,7 +27,7 @@ const InfoClima = ({ dadosClima }) => {
               {`${dadosClima.main.temp.toFixed()}`}
               <sup className="text-[35px] mt-[10px] font-normal">°C</sup>
             </span>
-            <div className="ml-[28px]">
+            <div className="ml-[15px] md:ml-[28px]">
               <span className="text-lg text-white font-semibold ">
                 {" "}
                 {formatLetter(dadosClima.weather[0].description)}
@@ -44,7 +44,7 @@ const InfoClima = ({ dadosClima }) => {
               de {`${dadosClima.main.temp_min.toFixed()}°`}
             </p>
           </div>
-          <div className="flex mt-[15px] gap-[44px] ml-[10px] md:mt-6">
+          <div className="flex mt-[15px] gap-[35px] ml-[10px] md:mt-6 md:gap-[60px] md:ml-4">
             <div>
               <Span>Vento</Span>
               <EstatisticasClima>{`${(
